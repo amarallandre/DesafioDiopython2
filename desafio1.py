@@ -39,9 +39,10 @@ while True:
                 if saque > saldo:
                     print("Você não tem saldo suficiente")
                 else:
-                    numero_saques += 1
+
                     saldo = saldo - saque
                     extrato += f"Saque:    R$ {saque:.2f}\n"
+                    numero_saques += 1
         else:
             print("Você excedeu o limite de saques")
 
